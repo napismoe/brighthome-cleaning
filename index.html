@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Swap "no-js" for "js" as early as possible so CSS can safely enable
+       JavaScript-dependent styles (animations, mobile menu). -->
+  <script>document.documentElement.classList.replace('no-js', 'js');</script>
+
+  <!-- ===== Primary SEO ===== -->
+  <title>BrightHome Cleaning | Residential Cleaning Services in Miami, FL</title>
+  <meta name="description" content="Thorough, detail-minded home cleaning in Miami, Florida. Standard, deep, move-in/move-out, recurring and vacation rental cleaning. Request a written quote online.">
+  <!-- example.com is a reserved placeholder domain. Replace it with the real domain before launch. -->
+  <link rel="canonical" href="https://www.example.com/">
+  <!-- Demo site of a fictional company: keep it out of search results.
+       Switch to "index, follow" only if this becomes a real business website. -->
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#0F2C3F">
+
+  <!-- ===== Open Graph (Facebook, LinkedIn, WhatsApp…) ===== -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BrightHome Cleaning">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="BrightHome Cleaning | Residential Cleaning in Miami, FL">
+  <meta property="og:description" content="Detail-minded home cleaning for Miami homes. Request a written quote online.">
+  <meta property="og:url" content="https://www.example.com/">
+  <!-- Open Graph images use JPG: WebP is not reliably supported by every social platform. -->
+  <meta property="og:image" content="https://www.example.com/assets/images/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="A sunlit living room with light linen sofas, white shutters and tall plants.">
+
+  <!-- ===== Twitter / X card ===== -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="BrightHome Cleaning | Residential Cleaning in Miami, FL">
+  <meta name="twitter:description" content="Detail-minded home cleaning for Miami homes. Request a written quote online.">
+  <meta name="twitter:image" content="https://www.example.com/assets/images/og-image.jpg">
+
+  <!-- ===== Icons & app manifest ===== -->
+  <link rel="icon" href="assets/favicon/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <!-- ===== Fonts: Fraunces (headings) + Inter (body) ===== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Inter:wght@400..600&display=swap">
+
+  <!-- ===== Preload the hero image (Largest Contentful Paint) ===== -->
+  <link rel="preload" as="image" type="image/webp"
+        href="assets/images/hero-living-room-1200.webp"
+        imagesrcset="assets/images/hero-living-room-800.webp 800w, assets/images/hero-living-room-1200.webp 1200w"
+        imagesizes="(min-width: 64em) 46vw, 100vw">
+
+  <!-- ===== Styles (general → specific) ===== -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+
+  <!-- ===== Scripts: "defer" runs them after the HTML is parsed, in this order ===== -->
+  <script src="js/form-validation.js" defer></script>
+  <script src="js/form-service.js" defer></script>
+  <script src="js/form.js" defer></script>
+  <script src="js/animations.js" defer></script>
+  <script src="js/main.js" defer></script>
+
+  <!-- ===== Structured data (Schema.org) =====
+       This describes the WEBSITE, not a business: BrightHome Cleaning is
+       fictional, so no LocalBusiness data is published as if it were real.
+       Replace it with a LocalBusiness block only for a real, verified business. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "BrightHome Cleaning (demo website)",
+    "url": "https://www.example.com/",
+    "inLanguage": "en-US",
+    "description": "Demonstration website for BrightHome Cleaning, a fictional residential cleaning company. It is not a real business and offers no services."
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Inline SVG icon sprite. It lives inside the HTML (not in a separate file)
+       because browsers block external SVG references when the page is opened
+       directly from disk (file://). -->
+  <svg xmlns="http://www.w3.org/2000/svg" class="visually-hidden" aria-hidden="true" focusable="false">
+    <symbol id="icon-logo" viewBox="0 0 24 24">
+      <path d="M3.5 11.5 12 4.5l8.5 7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M6 10v9.5h12V10" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M12 11.5v5M9.5 14h5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="icon-arrow" viewBox="0 0 24 24">
+      <path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24">
+      <path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="icon-plus" viewBox="0 0 24 24">
+      <path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="icon-menu" viewBox="0 0 24 24">
+      <path d="M4 8h16M4 16h16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="icon-close" viewBox="0 0 24 24">
+      <path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+    </symbol>
+  </svg>
+
+  <!-- Lets keyboard and screen-reader users jump past the navigation. -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- Makes it clear from the first second that this is a demo. -->
+  <div class="demo-banner" role="note">
+    <p class="container demo-banner__text">
+      <strong>Demo website.</strong> BrightHome Cleaning is a fictional company.
+      No services are offered and no requests are sent.
+    </p>
+  </div>
+
+  <!-- ================================================================
+       HEADER & NAVIGATION
+       ================================================================ -->
+  <header class="site-header" id="top">
+    <div class="container site-header__inner">
+      <a class="brand" href="#top" aria-label="BrightHome Cleaning, back to top">
+        <svg class="brand__mark" aria-hidden="true" focusable="false"><use href="#icon-logo"></use></svg>
+        <span class="brand__name">BrightHome</span>
+      </a>
+
+      <button class="nav-toggle" type="button"
+              aria-expanded="false" aria-controls="site-nav">
+        <svg class="nav-toggle__icon nav-toggle__icon--open" aria-hidden="true" focusable="false"><use href="#icon-menu"></use></svg>
+        <svg class="nav-toggle__icon nav-toggle__icon--close" aria-hidden="true" focusable="false"><use href="#icon-close"></use></svg>
+        <span class="visually-hidden">Menu</span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul class="site-nav__list">
+          <li><a class="site-nav__link" href="#services">Services</a></li>
+          <li><a class="site-nav__link" href="#why-brighthome">Why BrightHome</a></li>
+          <li><a class="site-nav__link" href="#how-it-works">How it works</a></li>
+          <li><a class="site-nav__link" href="#faq">FAQ</a></li>
+        </ul>
+        <a class="button button--primary button--small site-nav__cta" href="#contact">Request a quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ================================================================
+         1. HERO
+         ================================================================ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="eyebrow">Residential cleaning in Miami, Florida</p>
+          <h1 class="hero__title" id="hero-title">
+            Come home to a <em>calm, clean</em> space.
+          </h1>
+          <p class="hero__lead">
+            BrightHome Cleaning cares for Miami homes with thorough, detail-minded
+            cleaning and products chosen with your household in mind, so your
+            free time belongs to you again.
+          </p>
+
+          <div class="hero__actions">
+            <a class="button button--primary" href="#contact">
+              Request a quote
+              <svg class="button__icon" aria-hidden="true" focusable="false"><use href="#icon-arrow"></use></svg>
+            </a>
+            <a class="button button--ghost" href="#services">Explore services</a>
+          </div>
+
+          <ul class="hero__notes" role="list">
+            <li>
+              <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-check"></use></svg>
+              Eco-conscious products
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-check"></use></svg>
+              Flexible scheduling
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-check"></use></svg>
+              Written quote before your first visit
+            </li>
+          </ul>
+        </div>
+
+        <figure class="hero__media">
+          <!-- Above the fold: loaded eagerly with high priority (no lazy loading). -->
+          <img class="hero__image"
+               src="assets/images/hero-living-room-1200.webp"
+               srcset="assets/images/hero-living-room-800.webp 800w,
+                       assets/images/hero-living-room-1200.webp 1200w"
+               sizes="(min-width: 64em) 46vw, 100vw"
+               width="1200" height="1500"
+               alt="A sunlit living room with light linen sofas, white plantation shutters and tall tropical plants."
+               fetchpriority="high" decoding="async">
+        </figure>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         2. SERVICES
+         ================================================================ -->
+    <section class="section services" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <header class="section-header services__header">
+          <div>
+            <p class="eyebrow">Services</p>
+            <h2 class="section-title" id="services-title">
+              Cleaning shaped around <em>the way you live.</em>
+            </h2>
+          </div>
+          <p class="section-intro">
+            From weekly upkeep to a full reset before moving day, every visit
+            follows a clear checklist adapted to your home.
+          </p>
+        </header>
+
+        <figure class="services__media">
+          <img src="assets/images/services-kitchen-1600.webp"
+               srcset="assets/images/services-kitchen-800.webp 800w,
+                       assets/images/services-kitchen-1600.webp 1600w"
+               sizes="(min-width: 80em) 1216px, 100vw"
+               width="1600" height="1000"
+               alt="A bright kitchen with natural wood cabinets, white countertops and glass doors opening onto a garden."
+               loading="lazy" decoding="async">
+        </figure>
+
+        <ul class="services__list" role="list">
+          <li>
+            <article class="service-card">
+              <h3 class="service-card__title">Standard Cleaning</h3>
+              <p class="service-card__text">
+                Regular upkeep for kitchens, bathrooms, bedrooms and living areas.
+              </p>
+              <ul class="checklist" role="list">
+                <li>Dusting of reachable surfaces</li>
+                <li>Kitchen counters, sink and appliance exteriors</li>
+                <li>Bathrooms cleaned and sanitized</li>
+                <li>Floors vacuumed and mopped</li>
+              </ul>
+            </article>
+          </li>
+
+          <li>
+            <article class="service-card">
+              <h3 class="service-card__title">Deep Cleaning</h3>
+              <p class="service-card__text">
+                A top-to-bottom reset for homes that need extra attention.
+              </p>
+              <ul class="checklist" role="list">
+                <li>Baseboards, doors and light switches</li>
+                <li>Inside the microwave, outside the oven</li>
+                <li>Build-up removal in showers and tubs</li>
+                <li>Detailed dusting of fixtures and vents</li>
+              </ul>
+            </article>
+          </li>
+
+          <li>
+            <article class="service-card">
+              <h3 class="service-card__title">Move-In / Move-Out</h3>
+              <p class="service-card__text">
+                An empty-home clean so you can hand over the keys or settle in
+                with confidence.
+              </p>
+              <ul class="checklist" role="list">
+                <li>Inside cabinets, drawers and closets</li>
+                <li>Inside the refrigerator and oven</li>
+                <li>Windowsills and tracks</li>
+                <li>Full floor care, room by room</li>
+              </ul>
+            </article>
+          </li>
+
+          <li>
+            <article class="service-card">
+              <h3 class="service-card__title">Recurring Cleaning</h3>
+              <p class="service-card__text">
+                Weekly, every-other-week or monthly visits that keep your home
+                consistently fresh.
+              </p>
+              <ul class="checklist" role="list">
+                <li>The same checklist on every visit</li>
+                <li>A familiar team whenever possible</li>
+                <li>Simple schedule changes</li>
+              </ul>
+            </article>
+          </li>
+
+          <li>
+            <article class="service-card">
+              <h3 class="service-card__title">Vacation Rental Turnover</h3>
+              <p class="service-card__text">
+                Guest-ready cleaning between stays for short-term rentals
+                across Miami.
+              </p>
+              <ul class="checklist" role="list">
+                <li>Linen change and bed making with your linens</li>
+                <li>Kitchen and bathroom reset</li>
+                <li>Guest-ready presentation, every time</li>
+              </ul>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         3. BENEFITS
+         ================================================================ -->
+    <section class="section benefits" id="why-brighthome" aria-labelledby="benefits-title">
+      <div class="container benefits__inner">
+        <div class="benefits__intro">
+          <p class="eyebrow">Why BrightHome</p>
+          <h2 class="section-title" id="benefits-title">
+            The difference is in <em>the details.</em>
+          </h2>
+          <figure class="benefits__media">
+            <img src="assets/images/benefits-detail-1200.webp"
+                 srcset="assets/images/benefits-detail-600.webp 600w,
+                         assets/images/benefits-detail-1200.webp 1200w"
+                 sizes="(min-width: 64em) 36vw, 100vw"
+                 width="1200" height="1500"
+                 alt="A person in yellow cleaning gloves wiping down a white table beside fresh flowers and potted plants."
+                 loading="lazy" decoding="async">
+          </figure>
+        </div>
+
+        <ul class="benefits__list" role="list">
+          <li class="benefit">
+            <h3 class="benefit__title">Products chosen with care</h3>
+            <p class="benefit__text">
+              We favor low-odor, eco-conscious products and use them thoughtfully
+              around children, pets and delicate surfaces.
+            </p>
+          </li>
+          <li class="benefit">
+            <h3 class="benefit__title">A consistent, trained team</h3>
+            <p class="benefit__text">
+              Every cleaner follows the same detailed checklists, and we aim to
+              send a team you already know.
+            </p>
+          </li>
+          <li class="benefit">
+            <h3 class="benefit__title">Clear, upfront quotes</h3>
+            <p class="benefit__text">
+              You receive a written quote based on your home and the service you
+              choose, before the first visit.
+            </p>
+          </li>
+          <li class="benefit">
+            <h3 class="benefit__title">Scheduling that fits Miami life</h3>
+            <p class="benefit__text">
+              Morning, midday or afternoon visits, with simple rescheduling when
+              plans change.
+            </p>
+          </li>
+          <li class="benefit">
+            <h3 class="benefit__title">Attention to small surfaces</h3>
+            <p class="benefit__text">
+              Light switches, handles, baseboards: the details that make a home
+              feel truly clean.
+            </p>
+          </li>
+          <li class="benefit">
+            <h3 class="benefit__title">A real person on every request</h3>
+            <p class="benefit__text">
+              Each request is reviewed individually, and every confirmation
+              arrives by email so nothing gets lost.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         4. HOW IT WORKS
+         ================================================================ -->
+    <section class="section process" id="how-it-works" aria-labelledby="process-title">
+      <div class="container">
+        <header class="section-header">
+          <p class="eyebrow">How it works</p>
+          <h2 class="section-title" id="process-title">
+            Four simple steps to <em>a cleaner home.</em>
+          </h2>
+        </header>
+
+        <!-- An ordered list: the order of the steps matters. -->
+        <ol class="process__list" role="list">
+          <li class="step">
+            <span class="step__number" aria-hidden="true">01</span>
+            <h3 class="step__title">Share a few details</h3>
+            <p class="step__text">
+              Share your home size, the service you need and your preferred
+              schedule using the form below.
+            </p>
+          </li>
+          <li class="step">
+            <span class="step__number" aria-hidden="true">02</span>
+            <h3 class="step__title">Receive a clear quote</h3>
+            <p class="step__text">
+              We review your request and reply by email with a written quote and
+              available dates.
+            </p>
+          </li>
+          <li class="step">
+            <span class="step__number" aria-hidden="true">03</span>
+            <h3 class="step__title">We take care of the cleaning</h3>
+            <p class="step__text">
+              Our team arrives with supplies and follows a detailed checklist,
+              room by room.
+            </p>
+          </li>
+          <li class="step">
+            <span class="step__number" aria-hidden="true">04</span>
+            <h3 class="step__title">Enjoy, and repeat if you like</h3>
+            <p class="step__text">
+              Walk into a fresh home. Keep it a single visit or set up a
+              recurring schedule.
+            </p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         5. FAQ
+         Native <details>/<summary>: opens and closes without JavaScript
+         and is keyboard and screen-reader friendly by default.
+         ================================================================ -->
+    <section class="section faq" id="faq" aria-labelledby="faq-title">
+      <div class="container faq__inner">
+        <header class="section-header faq__header">
+          <p class="eyebrow">FAQ</p>
+          <h2 class="section-title" id="faq-title">
+            Questions, <em>answered.</em>
+          </h2>
+          <p class="section-intro">
+            Can't find what you're looking for? Add your question to the
+            request form and we'll answer it with your quote.
+          </p>
+        </header>
+
+        <div class="faq__list">
+          <details class="faq-item">
+            <summary class="faq-item__question">
+              Which areas do you serve?
+              <svg class="faq-item__icon" aria-hidden="true" focusable="false"><use href="#icon-plus"></use></svg>
+            </summary>
+            <div class="faq-item__answer">
+              <p>
+                We clean homes in Miami and nearby neighborhoods in Miami-Dade
+                County. Include your ZIP code in the form and we'll confirm
+                availability for your address.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-item__question">
+              How is the price of a cleaning determined?
+              <svg class="faq-item__icon" aria-hidden="true" focusable="false"><use href="#icon-plus"></use></svg>
+            </summary>
+            <div class="faq-item__answer">
+              <p>
+                Pricing depends on the size and condition of your home, the type
+                of service and how often you'd like us to visit. You'll always
+                receive a written quote before your first cleaning.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-item__question">
+              Do I need to be home during the cleaning?
+              <svg class="faq-item__icon" aria-hidden="true" focusable="false"><use href="#icon-plus"></use></svg>
+            </summary>
+            <div class="faq-item__answer">
+              <p>
+                No. Many clients prefer to be out. We'll agree on how to access
+                your home when we confirm the appointment.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-item__question">
+              Do you bring your own supplies?
+              <svg class="faq-item__icon" aria-hidden="true" focusable="false"><use href="#icon-plus"></use></svg>
+            </summary>
+            <div class="faq-item__answer">
+              <p>
+                Yes. Our team brings the products and equipment needed. If you
+                prefer that we use specific products, just let us know.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-item__question">
+              Are your products safe for children and pets?
+              <svg class="faq-item__icon" aria-hidden="true" focusable="false"><use href="#icon-plus"></use></svg>
+            </summary>
+            <div class="faq-item__answer">
+              <p>
+                We favor eco-conscious, low-odor products and use them carefully.
+                Tell us about allergies, sensitivities or pets in your request so
+                we can plan accordingly.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-item__question">
+              Can I reschedule or cancel a visit?
+              <svg class="faq-item__icon" aria-hidden="true" focusable="false"><use href="#icon-plus"></use></svg>
+            </summary>
+            <div class="faq-item__answer">
+              <p>
+                Of course. We ask for at least 48 hours' notice so we can
+                reorganize our team's schedule.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-item__question">
+              What if something was missed?
+              <svg class="faq-item__icon" aria-hidden="true" focusable="false"><use href="#icon-plus"></use></svg>
+            </summary>
+            <div class="faq-item__answer">
+              <p>
+                Let us know as soon as possible and we'll arrange to make it
+                right. Your feedback also helps us refine the checklist for your
+                home.
+              </p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         6. CONTACT FORM
+         Ready for a future integration: every field has a "name", the
+         form has "action" and "method", and native validation attributes
+         work even without JavaScript. No submission is simulated.
+         ================================================================ -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container contact__inner">
+        <div class="contact__intro">
+          <p class="eyebrow">Request a quote</p>
+          <h2 class="section-title" id="contact-title">
+            Tell us about <em>your home.</em>
+          </h2>
+          <p class="section-intro">
+            Share a few details and we'll prepare a written quote tailored to
+            your space and schedule.
+          </p>
+
+          <h3 class="contact__subtitle">What happens next</h3>
+          <ol class="contact__next" role="list">
+            <li>We review your request individually.</li>
+            <li>You receive a written quote and available dates by email.</li>
+            <li>You confirm the date that works best for you.</li>
+          </ol>
+
+          <p class="contact__area">
+            <strong>Service area:</strong> Miami and nearby neighborhoods in
+            Miami-Dade County, Florida.
+          </p>
+        </div>
+
+        <!-- DEMO MODE: no endpoint is configured, so nothing is sent.
+             TODO (integration): set "action" to the real endpoint
+             and configure it in js/form-service.js. -->
+        <form class="contact-form" id="contact-form" action="" method="post"
+              aria-describedby="form-demo-note form-required-note">
+          <p class="form-demo-note" id="form-demo-note">
+            <strong>Demo form.</strong> Until a real service is connected,
+            requests are not sent or stored anywhere.
+          </p>
+          <p class="contact-form__note" id="form-required-note">
+            Fields marked with <span aria-hidden="true">*</span> are required.
+          </p>
+
+          <div class="form-grid">
+            <div class="field">
+              <label class="field__label" for="name">
+                Full name <span class="field__required" aria-hidden="true">*</span>
+              </label>
+              <input class="field__input" type="text" id="name" name="name"
+                     autocomplete="name" required maxlength="80"
+                     aria-describedby="name-error">
+              <p class="field__error" id="name-error"></p>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="email">
+                Email <span class="field__required" aria-hidden="true">*</span>
+              </label>
+              <input class="field__input" type="email" id="email" name="email"
+                     autocomplete="email" required maxlength="120"
+                     aria-describedby="email-error">
+              <p class="field__error" id="email-error"></p>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="phone">
+                Phone <span class="field__optional">(optional)</span>
+              </label>
+              <input class="field__input" type="tel" id="phone" name="phone"
+                     autocomplete="tel" inputmode="tel" maxlength="20"
+                     aria-describedby="phone-error">
+              <p class="field__error" id="phone-error"></p>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="zip">
+                ZIP code <span class="field__required" aria-hidden="true">*</span>
+              </label>
+              <input class="field__input" type="text" id="zip" name="zip"
+                     autocomplete="postal-code" inputmode="numeric"
+                     pattern="[0-9]{5}" maxlength="5" required
+                     aria-describedby="zip-hint zip-error">
+              <p class="field__hint" id="zip-hint">5 digits, e.g. 33131</p>
+              <p class="field__error" id="zip-error"></p>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="service">
+                Service <span class="field__required" aria-hidden="true">*</span>
+              </label>
+              <select class="field__input field__select" id="service" name="service"
+                      required aria-describedby="service-error">
+                <option value="">Select a service</option>
+                <option value="standard">Standard Cleaning</option>
+                <option value="deep">Deep Cleaning</option>
+                <option value="move">Move-In / Move-Out</option>
+                <option value="recurring">Recurring Cleaning</option>
+                <option value="vacation-rental">Vacation Rental Turnover</option>
+              </select>
+              <p class="field__error" id="service-error"></p>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="home-size">
+                Home size <span class="field__required" aria-hidden="true">*</span>
+              </label>
+              <select class="field__input field__select" id="home-size" name="homeSize"
+                      required aria-describedby="home-size-error">
+                <option value="">Select a size</option>
+                <option value="studio-1">Studio or 1 bedroom</option>
+                <option value="2">2 bedrooms</option>
+                <option value="3">3 bedrooms</option>
+                <option value="4-plus">4 or more bedrooms</option>
+              </select>
+              <p class="field__error" id="home-size-error"></p>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="frequency">
+                How often? <span class="field__required" aria-hidden="true">*</span>
+              </label>
+              <select class="field__input field__select" id="frequency" name="frequency"
+                      required aria-describedby="frequency-error">
+                <option value="">Select a frequency</option>
+                <option value="one-time">One-time</option>
+                <option value="weekly">Weekly</option>
+                <option value="biweekly">Every other week</option>
+                <option value="monthly">Monthly</option>
+              </select>
+              <p class="field__error" id="frequency-error"></p>
+            </div>
+
+            <div class="field field--full">
+              <label class="field__label" for="message">
+                Anything we should know? <span class="field__optional">(optional)</span>
+              </label>
+              <textarea class="field__input field__textarea" id="message" name="message"
+                        rows="5" maxlength="1000"
+                        aria-describedby="message-hint message-error"></textarea>
+              <p class="field__hint" id="message-hint">Pets, allergies, access details or questions. Up to 1,000 characters.</p>
+              <p class="field__error" id="message-error"></p>
+            </div>
+
+            <!-- Honeypot: hidden from people, often filled in by spam bots.
+                 Requests where it has a value should be discarded. -->
+            <div class="field--honeypot" aria-hidden="true">
+              <label for="company">Company</label>
+              <input type="text" id="company" name="company" tabindex="-1" autocomplete="off">
+            </div>
+
+            <div class="field field--full field--checkbox">
+              <input class="field__checkbox" type="checkbox" id="consent" name="consent"
+                     value="yes" required aria-describedby="consent-error">
+              <label class="field__label" for="consent">
+                I agree that BrightHome Cleaning may contact me about this request,
+                as described in the <a href="privacy.html">privacy policy</a>.
+                <span class="field__required" aria-hidden="true">*</span>
+              </label>
+              <p class="field__error" id="consent-error"></p>
+            </div>
+          </div>
+
+          <button class="button button--primary contact-form__submit" type="submit">
+            Send request
+            <svg class="button__icon" aria-hidden="true" focusable="false"><use href="#icon-arrow"></use></svg>
+          </button>
+
+          <!-- Result messages are announced to screen readers. -->
+          <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================================================================
+       FOOTER
+       ================================================================ -->
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div class="site-footer__brand">
+        <a class="brand brand--light" href="#top" aria-label="BrightHome Cleaning, back to top">
+          <svg class="brand__mark" aria-hidden="true" focusable="false"><use href="#icon-logo"></use></svg>
+          <span class="brand__name">BrightHome</span>
+        </a>
+        <p class="site-footer__tagline">Residential cleaning in Miami, Florida.</p>
+      </div>
+
+      <nav class="site-footer__nav" aria-label="Footer">
+        <ul role="list">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#why-brighthome">Why BrightHome</a></li>
+          <li><a href="#how-it-works">How it works</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Request a quote</a></li>
+          <li><a href="privacy.html">Privacy policy</a></li>
+        </ul>
+      </nav>
+
+      <div class="site-footer__legal">
+        <p>&copy; <span id="current-year">2026</span> BrightHome Cleaning. All rights reserved.</p>
+        <p class="site-footer__disclaimer">
+          BrightHome Cleaning is a fictional company created for a demonstration project.
+        </p>
+        <p class="site-footer__credits">
+          Photography from Unsplash by
+          <a href="https://unsplash.com/@jakegoossen?utm_source=brighthome_demo&amp;utm_medium=referral">Jake Goossen</a>,
+          <a href="https://unsplash.com/@jsnbrsc?utm_source=brighthome_demo&amp;utm_medium=referral">Jason Briscoe</a> and
+          <a href="https://unsplash.com/@silverkblack?utm_source=brighthome_demo&amp;utm_medium=referral">Vitaly Gariev</a>.
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

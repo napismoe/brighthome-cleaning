@@ -1,0 +1,54 @@
+# =====================================================================
+# BrightHome Cleaning — files that must NOT be uploaded to Git/GitHub
+# ---------------------------------------------------------------------
+# Everything the website needs (HTML, CSS, JavaScript, images,
+# CREDITS.md, README.md…) is intentionally NOT listed here.
+# =====================================================================
+
+# ---------- Secrets & environment variables ----------
+# API keys, form-service tokens, passwords. Never commit these.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+secrets.*
+*.secret
+
+# ---------- Local tool configuration (machine-specific) ----------
+# .claude/ holds Claude Code settings for THIS computer only.
+# launch.json points to absolute paths on this PC (user folder and a
+# temporary test-server script), so it would not work anywhere else.
+.claude/
+
+# Editor settings
+.vscode/
+.idea/
+*.code-workspace
+
+# ---------- Caches, dependencies & build output ----------
+# Not used today; listed in case tools are added later.
+node_modules/
+.cache/
+.parcel-cache/
+.sass-cache/
+dist/
+build/
+*.log
+npm-debug.log*
+
+# ---------- Operating-system & temporary files ----------
+# Windows
+Thumbs.db
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
+# macOS
+.DS_Store
+# Office / editor temporary and backup files
+~$*
+*.tmp
+*.swp
+*~

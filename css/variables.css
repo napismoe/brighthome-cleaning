@@ -1,0 +1,99 @@
+/* =====================================================================
+   BrightHome Cleaning — Design tokens
+   ---------------------------------------------------------------------
+   The single source of truth for the brand: colors, type, spacing,
+   borders and motion. Every other stylesheet reads from these values,
+   so changing one here updates the whole site.
+
+   Contrast notes (WCAG 2.2 AA):
+   - Body text and links use colors with a ratio of at least 4.5:1
+     against their background.
+   - Form field borders use --color-border-field (≥ 3:1 vs. white).
+   ===================================================================== */
+
+:root {
+  /* ---------- Color: brand palette ---------- */
+  --color-navy-950: #0b2131;   /* footer, demo banner */
+  --color-navy-900: #0f2c3f;   /* primary brand color: deep blue */
+  --color-navy-700: #234a63;
+
+  --color-teal-700: #1e6b67;   /* turquoise for text on light backgrounds (5.8:1) */
+  --color-teal-500: #2f8f88;   /* decorative turquoise (lines, small marks) */
+  --color-teal-300: #8fd3c9;   /* turquoise for text on deep blue (8:1) */
+  --color-teal-50:  #eaf4f1;   /* very light tint for notes */
+
+  --color-cream-50:  #faf7f1;  /* main page background */
+  --color-cream-100: #f3ede2;  /* alternate section background */
+  --color-cream-200: #e8dfcf;  /* hairlines on cream */
+  --color-white:     #ffffff;
+
+  /* ---------- Color: semantic roles ---------- */
+  --color-bg:           var(--color-cream-50);
+  --color-bg-alt:       var(--color-cream-100);
+  --color-surface:      var(--color-white);
+  --color-text:         #14232e;  /* near-black with a blue undertone */
+  --color-text-muted:   #51606a;  /* 6.3:1 on cream */
+  --color-accent:       var(--color-teal-700);
+  --color-line:         var(--color-cream-200);   /* decorative hairlines */
+  --color-line-strong:  #c9bea9;                  /* section dividers */
+  --color-border-field: #7c878c;                  /* form borders (3.7:1 on white) */
+
+  --color-on-dark:        #f6f2ea;  /* text on deep blue */
+  --color-on-dark-muted:  #b7c5cc;  /* secondary text on deep blue */
+  --color-line-on-dark:   rgba(246, 242, 234, 0.16);
+
+  --color-error:   #a33a2e;   /* 5.9:1 on white */
+  --color-error-bg:#fbefec;
+  --color-success: var(--color-teal-700);
+
+  --color-focus:   var(--color-teal-500);
+
+  /* ---------- Typography ---------- */
+  --font-display: "Fraunces", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+
+  /* Fluid type scale: grows smoothly between mobile and desktop.
+     clamp(minimum, preferred, maximum) */
+  --text-xs:  0.8125rem;                                   /* 13px */
+  --text-sm:  0.9375rem;                                   /* 15px */
+  --text-base: 1.0625rem;                                  /* 17px */
+  --text-lg:  clamp(1.125rem, 1.06rem + 0.3vw, 1.3125rem); /* 18 → 21px */
+  --text-xl:  clamp(1.3125rem, 1.18rem + 0.6vw, 1.625rem); /* 21 → 26px */
+  --text-2xl: clamp(2rem, 1.45rem + 2.4vw, 3.375rem);      /* 32 → 54px */
+  --text-3xl: clamp(2.625rem, 1.5rem + 5vw, 5.5rem);       /* 42 → 88px */
+
+  --leading-tight: 1.04;
+  --leading-snug: 1.2;
+  --leading-body: 1.65;
+
+  --tracking-tight: -0.025em;
+  --tracking-wide: 0.14em;
+
+  /* ---------- Spacing ---------- */
+  --space-2xs: 0.25rem;
+  --space-xs:  0.5rem;
+  --space-sm:  0.75rem;
+  --space-md:  1rem;
+  --space-lg:  1.5rem;
+  --space-xl:  2rem;
+  --space-2xl: 3rem;
+  --space-3xl: clamp(3rem, 2rem + 4vw, 5rem);
+  --space-section: clamp(5rem, 3rem + 8vw, 9.5rem);   /* vertical rhythm between sections */
+
+  /* ---------- Layout ---------- */
+  --container-max: 76rem;                              /* 1216px */
+  --container-pad: clamp(1.25rem, 0.75rem + 2.5vw, 2.5rem);
+  --header-height: 4.5rem;
+  --measure: 62ch;                                     /* comfortable line length */
+
+  /* ---------- Shape ---------- */
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-arch: 999px 999px var(--radius-md) var(--radius-md);
+
+  /* ---------- Motion ---------- */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --duration-fast: 180ms;
+  --duration-base: 320ms;
+  --duration-slow: 800ms;
+}
