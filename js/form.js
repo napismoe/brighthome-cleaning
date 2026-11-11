@@ -5,7 +5,7 @@
 
    What it does:
    - Validates required fields, email format, US ZIP code (5 digits),
-     optional US phone number, message length and consent.
+     message length and the demo acknowledgement checkbox.
    - Shows accessible error messages: each message is linked to its
      field (aria-describedby, already in the HTML) and the field is
      marked with aria-invalid="true".
@@ -31,9 +31,16 @@
   var statusBox = document.getElementById('form-status');
 
   // JavaScript takes over validation, so the browser's default bubbles
-  // are turned off. Without JavaScript the native "required"/"pattern"
-  // attributes in the HTML still protect the form.
+  // are turned off.
   form.noValidate = true;
+
+  // The submit button ships disabled in the HTML, so that without
+  // JavaScript the browser can never submit (and send) the form.
+  // Now that this script controls submission, it can be enabled.
+  var submitButton = form.querySelector('[type="submit"]');
+  if (submitButton) {
+    submitButton.disabled = false;
+  }
 
   /* ---------------------------------------------------------------
      Validation rules
@@ -53,15 +60,6 @@
     email: function (value) {
       if (value === '') return 'Please enter your email address.';
       if (!EMAIL_PATTERN.test(value)) return 'Enter a valid email address, like name@example.com.';
-      return '';
-    },
-
-    // Optional: only checked if something was typed.
-    phone: function (value) {
-      if (value === '') return '';
-      var digits = value.replace(/\D/g, '');
-      var isUsNumber = digits.length === 10 || (digits.length === 11 && digits.charAt(0) === '1');
-      if (!isUsNumber) return 'Enter a 10-digit US phone number, or leave this field empty.';
       return '';
     },
 
@@ -88,7 +86,7 @@
     },
 
     consent: function (checked) {
-      return checked ? '' : 'Please confirm that we may contact you about this request.';
+      return checked ? '' : 'Please confirm that you understand this is a demo form.';
     }
   };
 
@@ -218,12 +216,11 @@
       return;
     }
 
-    /* Integration point (future):
-       When a real service is connected, this is where the validated
-       data would be sent (for example with fetch() to the URL set in
-       the form's "action" attribute), followed by a real success or
-       error message based on the server's answer. The server must
-       validate the data again: browser validation is not security. */
+    /* Integration point (only for a real business, never in this demo):
+       this is where validated data would be sent to a real service,
+       followed by a success or error message based on its answer.
+       The server would have to validate the data again: browser
+       validation is not security. */
 
     // DEMO MODE: nothing is sent or stored. Clear the form so no
     // personal data stays on screen, then explain what happened.
@@ -235,8 +232,9 @@
     });
 
     showStatus(
-      'All fields look good. This is a demonstration website, so your ' +
-      'request was not sent or stored anywhere, and the form has been cleared.',
+      'Demo complete: all fields are valid. This is a portfolio demo, so ' +
+      'nothing was sent or stored, no one will contact you, and the form ' +
+      'has been cleared.',
       'success'
     );
   });

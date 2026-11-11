@@ -641,6 +641,77 @@
   }
 }
 
+/* ===================== LEGAL PAGE (privacy.html) =================== */
+.legal {
+  padding-block: clamp(3rem, 2rem + 4vw, 6rem) var(--space-section);
+}
+
+.legal__inner {
+  max-width: 46rem;
+}
+
+/* On very narrow phones the header button shows only "Back"; the rest
+   of the label stays available to screen readers. */
+@media (max-width: 24.99em) {
+  .legal__back-extra {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+}
+
+.legal__updated {
+  margin-top: var(--space-lg);
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+}
+
+.legal__summary {
+  margin-top: var(--space-2xl);
+  padding: var(--space-lg);
+  border-left: 2px solid var(--color-teal-500);
+  background-color: var(--color-teal-50);
+  font-size: var(--text-lg);
+  line-height: 1.6;
+}
+
+.legal__section {
+  margin-top: var(--space-3xl);
+  padding-top: var(--space-xl);
+  border-top: 1px solid var(--color-line-strong);
+}
+
+.legal__section h2 {
+  margin-bottom: var(--space-md);
+  color: var(--color-navy-900);
+  font-size: var(--text-xl);
+}
+
+.legal__section p + p,
+.legal__section p + ul,
+.legal__section ul + p {
+  margin-top: var(--space-md);
+}
+
+.legal__section ul {
+  display: grid;
+  gap: var(--space-xs);
+  padding-left: 1.25rem;
+}
+
+.legal__section p,
+.legal__section li {
+  max-width: var(--measure);
+  color: var(--color-text-muted);
+}
+
+.legal__section a {
+  color: var(--color-text);
+}
+
 /* =========================== FOOTER ================================= */
 .site-footer {
   padding-block: var(--space-3xl) var(--space-xl);

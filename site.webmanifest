@@ -1,0 +1,13 @@
+{
+  "name": "BrightHome Cleaning (portfolio demo)",
+  "short_name": "BrightHome",
+  "description": "Portfolio demo of a website for a fictional residential cleaning business.",
+  "start_url": "./index.html",
+  "display": "browser",
+  "background_color": "#faf7f1",
+  "theme_color": "#0f2c3f",
+  "icons": [
+    { "src": "assets/favicon/favicon.svg", "sizes": "any", "type": "image/svg+xml" },
+    { "src": "assets/favicon/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}

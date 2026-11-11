@@ -34,6 +34,7 @@
 }
 
 .brand__mark {
+  flex-shrink: 0;            /* never squeezed by neighbors in the header */
   width: 1.75rem;
   height: 1.75rem;
   color: var(--color-teal-700);
@@ -148,6 +149,13 @@
 
 .button--ghost:hover {
   border-color: var(--color-navy-900);
+}
+
+/* Only seen without JavaScript: the demo form's submit button stays
+   disabled so the browser can never send the form on its own. */
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 .button--small {
@@ -396,9 +404,9 @@
 }
 
 .field__checkbox {
-  width: 1.25rem;
-  height: 1.25rem;
-  margin-top: 0.125rem;
+  width: 1.5rem;              /* 24px: WCAG 2.2 minimum target size */
+  height: 1.5rem;
+  margin-top: 0;
   accent-color: var(--color-navy-900);
   cursor: pointer;
 }
